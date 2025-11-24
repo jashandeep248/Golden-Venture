@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: golden-ventures-backend
+    env: node
+    plan: free
+    buildCommand: cd Backend && npm install
+    startCommand: cd Backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+
+  - type: web
+    name: golden-ventures-frontend
+    env: static
+    plan: free
+    buildCommand: cd Frontend && npm install && npm run build
+    staticPublishPath: ./Frontend/dist
+    routes:
+      - type: rewrite
+        source: /api/*
+        destination: https://golden-ventures-backend.onrender.com/api/*

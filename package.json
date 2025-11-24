@@ -1,0 +1,12 @@
+{
+  "name": "golden-ventures",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy:backend": "cd Backend && vercel --prod",
+    "deploy:frontend": "cd Frontend && vercel --prod",
+    "deploy:all": "npm run deploy:backend && npm run deploy:frontend"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
