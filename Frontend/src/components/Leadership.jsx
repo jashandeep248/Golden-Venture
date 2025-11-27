@@ -1,4 +1,4 @@
-import img  from "../assets/UgenDorjeeBhutia.jpeg";
+import img  from "../assets/ugenDorjeeBhutia.jpeg";
 import img2 from "../assets/chuki.jpeg";
 import img3 from "../assets/DichenOngmuBhutia.jpeg";
 import img4 from "../assets/Tenzing.jpeg";
