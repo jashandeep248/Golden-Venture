@@ -25,7 +25,7 @@ function Contact() {
     }
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || '/api';
+      const apiUrl = import.meta.env.VITE_API_URL || 'https://golden-ventures-backend.onrender.com/api';
       const response = await fetch(`${apiUrl}/contact`, {
         method: 'POST',
         headers: {
