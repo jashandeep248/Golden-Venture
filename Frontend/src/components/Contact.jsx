@@ -67,15 +67,15 @@ function Contact() {
             <ul className="list-unstyled mt-4 d-grid gap-3">
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Phone</span>
-                <span>70635 11351 / 76027 46333</span>
+                <span>7063511351, 7602746333</span>
               </li>
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Email</span>
-                <span>goldenventures2011@gmail.com</span>
+                <span>goldenventures2025@gmail.com</span>
               </li>
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Office</span>
-                <span>Himalayan Little Monk Home Stay Building, Rumtek, East Sikkim 737135</span>
+                <span>Himalayan Little Monk Home Stay Building, Sazong, Rumtek, East Sikkim 737135</span>
               </li>
             </ul>
           </div>

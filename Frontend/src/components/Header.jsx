@@ -62,7 +62,7 @@ function Header() {
           Sikkim Infrastructure Experts
         </span>
         <h1 className="display-4 fw-bolder mb-4">
-          Engineering resilient roads, bridges, and civic spaces for the Himalayas.
+          Building sustainable ventures with integrity and innovation.
         </h1>
         <p className="lead text-white-50 mb-4 col-lg-7">
           From landslide-prone passes to high-altitude townships, we deliver reliable infrastructure that keeps

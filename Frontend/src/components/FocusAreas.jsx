@@ -5,33 +5,33 @@ import bridgeImage from "../assets/cable-bridge.jpg";
 const focusAreas = [
   {
     id: "roads",
-    title: "Mountain Road Corridors",
-    summary: "Designing cliff-hugging roads that stay open through every season.",
+    title: "Road Construction in North Sikkim",
+    summary: "Development and upgradation of mountain roadways with landslide protection.",
     detail:
-      "Resilient alignments, terraced retaining walls, and responsive drainage keep lifeline roads open across North Sikkim.",
+      "Development and upgradation of mountain roadways, landslide protection and slope stabilization, infrastructure projects in remote and high-altitude regions.",
     image: heroImage,
-    statLabel: "Kilometres reinforced",
-    statValue: "180+",
+    statLabel: "Projects Completed",
+    statValue: "25+",
   },
   {
     id: "buildings",
-    title: "Climate-Smart Buildings",
-    summary: "Raising public and residential hubs that shrug off seismic shocks.",
+    title: "Building Construction in South and East Sikkim",
+    summary: "Government and residential building projects with earthquake-resilient design.",
     detail:
-      "Hybrid concrete-steel frames, geotechnical anchoring, and local craft finishes for schools, clinics, and high-altitude housing.",
+      "Government and residential building projects, institutional and commercial structures, earthquake-resilient design and construction practices.",
     image: bridgeImage,
-    statLabel: "Structures delivered",
-    statValue: "65",
+    statLabel: "Structures Built",
+    statValue: "40+",
   },
   {
     id: "bridges",
-    title: "Bridge Connectivity",
-    summary: "Spanning valleys with modular steel and fast-set concrete systems.",
+    title: "Road and Bridge Construction Across Sikkim",
+    summary: "Construction of steel and concrete bridges with multi-span systems.",
     detail:
-      "Modular spans, micro-pile foundations, and accelerated launch sequences restore inter-district links within weeks.",
+      "Construction of steel and concrete bridges, multi-span and modular bridge systems, integrated road and bridge infrastructure development.",
     image: bridgeImage,
-    statLabel: "Bridges activated",
-    statValue: "27",
+    statLabel: "Bridges Built",
+    statValue: "15+",
   },
 ];
 
@@ -48,11 +48,10 @@ function FocusAreas() {
     <section className="py-5 bg-light" id="focus-areas">
       <div className="container">
         <div className="text-center mb-5" data-reveal>
-          <span className="section-label">Focus Areas</span>
-          <h2 className="h1 fw-bold">Where we create impact</h2>
+          <span className="section-label">Core Areas of Work</span>
+          <h2 className="h1 fw-bold">Our Specialized Services</h2>
           <p className="text-secondary mx-auto col-lg-8">
-            Three pillars steer our delivery roadmap across the state—from remote mountain passes to fast-growing
-            urban districts.
+            Three core areas define our expertise across Sikkim—from North Sikkim road construction to comprehensive infrastructure development.
           </p>
         </div>
         <div className="row g-5 align-items-center">

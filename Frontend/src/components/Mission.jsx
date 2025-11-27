@@ -3,24 +3,24 @@ import { useState } from "react";
 const pillars = {
   mission: {
     title: "Mission",
-    highlight: "Deliver resilient Himalayan infrastructure that keeps communities connected all year long.",
+    highlight: "To deliver high-quality construction solutions tailored to the geographic and environmental uniqueness of Sikkim.",
     description:
       "Every contract is a commitment to safe travel, inclusive development, and reliable public services for remote districts.",
     bullets: [
-      "Blend modern engineering with indigenous know-how",
-      "Train and employ local talent on every site",
-      "Respect fragile ecosystems with regenerative practices",
+      "To deliver high-quality construction solutions tailored to the geographic and environmental uniqueness of Sikkim.",
+      "To ensure timely project completion with utmost safety, durability, and environmental responsibility.",
+      "To foster local employment and skill development through all our operations.",
     ],
   },
   vision: {
     title: "Vision",
-    highlight: "Lead the eastern Himalayas in sustainable infrastructure that empowers future generations.",
+    highlight: "To be a trusted leader in sustainable infrastructure development across the Himalayan region, empowering communities through connectivity and construction excellence.",
     description:
-      "We see smart transport corridors, resilient social infrastructure, and climate-positive operations across Sikkim.",
+      "We envision a future where our infrastructure projects serve as pillars of community development and environmental stewardship.",
     bullets: [
-      "Expand smart mobility corridors across the region",
-      "Introduce circular material flows for construction",
-      "Stand up digital twins for predictive maintenance",
+      "Lead sustainable infrastructure development across the Himalayan region",
+      "Empower communities through enhanced connectivity",
+      "Maintain construction excellence in all our endeavors",
     ],
   },
 };
@@ -64,7 +64,7 @@ function Mission() {
               {pillarContent.bullets.map((item) => (
                 <li key={item} className="d-flex gap-3 align-items-start">
                   <span className="badge rounded-pill bg-warning text-dark mt-1">{pillarContent.title.charAt(0)}</span>
-                  <span>{item}</span>
+                  <span className="text-light">{item}</span>
                 </li>
               ))}
             </ul>

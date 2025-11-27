@@ -3,47 +3,39 @@ import img2 from "../assets/chuki.jpeg";
 import img3 from "../assets/DichenOngmuBhutia.jpeg";
 import img4 from "../assets/Tenzing.jpeg";
 import img5 from "../assets/brahma.jpeg";
-import img6 from "../assets/Nima.jpeg";
 
 const leadership = [
   {
     img: img,
-    name: "Mr. Ugen Dorjee Bhutia",
+    name: "Mr. Ugen Dorje Bhutia",
     role: "Managing Director",
-    bio: "Strategic oversight of multi-year connectivity programmes across North Sikkim.",
+    bio: "An experienced and visionary leader, Mr. Ugen Dorje Bhutia leads the company with strategic insight and a deep understanding of the construction industry in the Himalayan region.",
   },
   {
     img: img2,
-    name: "Ms. Chunki Doma Bhutia",
+    name: "Ms. Chong Dolma Bhutia",
     role: "Director",
-    bio: "Drives project controls, scheduling, and stakeholder coordination across districts.",
+    bio: "With a strong background in project management and organizational leadership, Ms. Chong Dolma Bhutia plays a key role in the execution and delivery of company projects.",
   },
   {
     img: img3,
-    name: "Ms. Dichen Ongmu Bhutia",
+    name: "Ms. Dichen Angmo Bhutia",
     role: "Director",
-    bio: "Leads compliance, procurement, and quality systems for every site mobilisation.",
+    bio: "Ms. Dichen Angmo Bhutia brings in her expertise in planning, compliance, and resource coordination, ensuring that all projects adhere to the highest quality and safety standards.",
   },
   {
     img: img4,
-    name: "Mr. Tenzing Lepcha",
+    name: "Mr. Tenzin Lepcha",
     role: "Director",
-    bio: "On-ground command for bridge launches and landslide mitigation crews.",
+    bio: "Mr. Tenzin Lepcha contributes significantly in field operations and project execution, particularly in challenging terrains, upholding the company's standard for timely and efficient completion.",
   },
   {
     img: img5,
     name: "Mr. Silbhadra Brahma",
     role: "CEO",
-    bio: "environmental consultant who leads EIA and biodiversity projects with QCI-NABET accreditation.",
+    bio: "Worked for construction and erection of two hydel power projects namely Kurhed 4.5 MW and Tulang 3.5 MW SHEP in Chamba Himachal Pradesh. And canal based Small Hydroelectric Power project of 5.0 MW on Madhopur Beas Link canal at Pathankot, Punjab.",
   },
-  
-    
-  {
-    img: img6,
-    name: "Mr.Nima Tshering Bhutia",
-    role: "Accountant Assistant",
-    bio: "financial record management and administrative support..",
-  },
+
 ];
 
 function Leadership() {

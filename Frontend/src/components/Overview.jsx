@@ -6,9 +6,7 @@ function Overview() {
           <div className="col-lg-6">
             <h2 className="h1 fw-bold mb-3">Building a stronger Himalaya</h2>
             <p className="lead text-secondary">
-              The Golden Venture Private Limited is a Rumtek-based construction partner trusted by government and
-              community leaders alike. We combine modern engineering with local insight to deliver dependable public
-              works across Sikkim's toughest terrain.
+              The Golden Venture Private Limited is a dynamic and rapidly growing construction company based in Rumtek, Sikkim, India. Established with a vision to contribute to the infrastructural development of the region, we specialize in delivering high-quality civil engineering and construction services across Sikkim. With a strong commitment to excellence, innovation, and sustainability, our projects are a testament to our dedication to enhancing connectivity and building a stronger future.
             </p>
           </div>
           <div className="col-lg-6">

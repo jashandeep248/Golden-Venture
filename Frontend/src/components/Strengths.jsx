@@ -1,18 +1,23 @@
 const strengths = [
   {
-    title: "Terrain-Ready Teams",
+    title: "Skilled and Experienced Team",
     detail:
-      "Engineers and crew acclimatised to high-altitude deployments with backup relief rotations built in.",
+      "Skilled and experienced team familiar with Himalayan terrain and challenging construction environments.",
   },
   {
-    title: "Sustainability by Default",
+    title: "Quality and Sustainability",
     detail:
-      "Low-impact sourcing, waste reduction playbooks, and native vegetation reintroduction after project handover.",
+      "Commitment to quality, sustainability, and timely delivery in all our construction projects.",
   },
   {
-    title: "Government Trusted",
+    title: "Strong Local Network",
     detail:
-      "Long-term partnerships with state agencies, delivering works packages to public audit standards.",
+      "Strong local network and government collaboration ensuring smooth project execution.",
+  },
+  {
+    title: "Modern Technology",
+    detail:
+      "Use of modern technology and equipment in construction to ensure efficiency and quality.",
   },
 ];
 
