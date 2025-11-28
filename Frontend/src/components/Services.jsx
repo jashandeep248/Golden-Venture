@@ -34,7 +34,7 @@ function Services() {
       <div className="container">
         <div className="row g-5 align-items-start">
           <div className="col-lg-5" data-reveal>
-            <span className="section-label">Services</span>
+            <span className="section-label fs-4 fw-bold">Services</span>
             <h2 className="h1 fw-bold mb-3">Full-scope delivery partners</h2>
             <p className="text-secondary">
               We take responsibility from terrain analysis through commissioning, blending agile project delivery with

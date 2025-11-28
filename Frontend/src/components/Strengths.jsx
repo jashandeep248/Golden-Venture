@@ -27,7 +27,7 @@ function Strengths() {
       <div className="container">
         <div className="row g-5 align-items-center">
           <div className="col-lg-5" data-reveal>
-            <span className="section-label">Why choose us</span>
+            <span className="section-label fs-4 fw-bold">Why choose us</span>
             <h2 className="h1 fw-bold mb-3">Strengths that stay on site</h2>
             <p className="text-secondary">
               Beyond blueprints, we bring systems and culture that keep projects resilient—from the first survey to

@@ -1,9 +1,25 @@
+import logoImage from "../assets/logo.jpg";
+
 function Overview() {
   return (
     <section className="py-5 bg-white" id="overview">
       <div className="container" data-reveal>
         <div className="row g-4 align-items-center">
-          <div className="col-lg-6">
+          <div className="col-lg-6" style={{
+            backgroundImage: `url(${logoImage})`,
+            backgroundSize: "300px 300px",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center center",
+            position: "relative",
+            padding: "40px 20px"
+          }}>
+            <div style={{
+              backgroundColor: "rgba(255, 255, 255, 0.1)",
+              padding: "20px",
+              borderRadius: "8px",
+              position: "relative",
+              zIndex: 1
+            }}>
             <h2 className="h1 fw-bold mb-3">Building a stronger Himalaya</h2>
             <p className="lead text-secondary mb-4">
               Golden Venture Private Limited is a dynamic and rapidly growing construction and engineering company headquartered in Rumtek, Sikkim, India.
@@ -17,6 +33,7 @@ function Overview() {
             <p className="text-secondary">
               With a growing portfolio of successful projects, we continue to shape resilient infrastructure for the Himalayan region.
             </p>
+            </div>
           </div>
           <div className="col-lg-6">
             <div className="row g-3">

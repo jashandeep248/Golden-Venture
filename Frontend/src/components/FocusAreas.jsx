@@ -48,7 +48,7 @@ function FocusAreas() {
     <section className="py-5 bg-light" id="focus-areas">
       <div className="container">
         <div className="text-center mb-5" data-reveal>
-          <span className="section-label">Core Areas of Work</span>
+          <span className="section-label fs-4 fw-bold">Core Areas of Work</span>
           <h2 className="h1 fw-bold">Our Specialized Services</h2>
           <p className="text-secondary mx-auto col-lg-8">
             Three core areas define our expertise across Sikkim—from North Sikkim road construction to comprehensive infrastructure development.

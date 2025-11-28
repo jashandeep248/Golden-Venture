@@ -1,32 +1,32 @@
 import img  from "../assets/ugenDorjeeBhutia.jpeg";
-import img2 from "../assets/chuki.jpeg";
+import img2 from "../assets/chuki.jpg";
 import img3 from "../assets/DichenOngmuBhutia.jpeg";
 import img4 from "../assets/Tenzing.jpeg";
 
 const leadership = [
   {
     img: img,
-    name: "Mr. Ugen Dorje Bhutia",
+    name: "Mr. Ugen Dorjee Bhutia",
     role: "Managing Director",
-    bio: "An experienced and visionary leader, Mr. Ugen Dorje Bhutia leads the company with strategic insight and a deep understanding of the construction industry in the Himalayan region.",
+    bio: "An experienced and visionary leader, Mr. Ugen Dorjee Bhutia leads the company with strategic insight and a deep understanding of the construction industry in the Himalayan region.",
   },
   {
     img: img2,
-    name: "Ms. Chong Dolma Bhutia",
+    name: "Ms. Chunki Doma Bhutia",
     role: "Director",
-    bio: "With a strong background in project management and organizational leadership, Ms. Chong Dolma Bhutia plays a key role in the execution and delivery of company projects.",
+    bio: "With a strong background in project management and organizational leadership, Ms. Chunki Doma Bhutia plays a key role in the execution and delivery of company projects.",
   },
   {
     img: img3,
-    name: "Ms. Dichen Angmo Bhutia",
+    name: "Ms. Dichen Ongmu Bhutia",
     role: "Director",
-    bio: "Ms. Dichen Angmo Bhutia brings in her expertise in planning, compliance, and resource coordination, ensuring that all projects adhere to the highest quality and safety standards.",
+    bio: "Ms. Dichen Ongmu Bhutia brings in her expertise in planning, compliance, and resource coordination, ensuring that all projects adhere to the highest quality and safety standards.",
   },
   {
     img: img4,
-    name: "Mr. Tenzin Lepcha",
+    name: "Mr. Tenzing Lepcha",
     role: "Director",
-    bio: "Mr. Tenzin Lepcha contributes significantly in field operations and project execution, particularly in challenging terrains, upholding the company's standard for timely and efficient completion.",
+    bio: "Mr. Tenzing Lepcha contributes significantly in field operations and project execution, particularly in challenging terrains, upholding the company's standard for timely and efficient completion.",
   }
 ];
 
@@ -44,7 +44,7 @@ function Leadership() {
       <div className="container">
 
         <div className="text-center mb-5" data-reveal>
-          <span className="section-label">Leadership</span>
+          <span className="section-label fs-4 fw-bold">Leadership</span>
           <h2 className="h1 fw-bold">Guided by local knowledge</h2>
           <p className="text-secondary mx-auto col-lg-8">
             A multidisciplinary board that navigates terrain, community expectations, and regulatory checkpoints with confidence.

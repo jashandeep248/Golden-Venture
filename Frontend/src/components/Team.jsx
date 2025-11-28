@@ -22,7 +22,7 @@ function Team() {
     <section className="py-5 bg-light" id="team">
       <div className="container">
         <div className="text-center mb-5" data-reveal>
-          <span className="section-label">Team</span>
+          <span className="section-label fs-4 fw-bold">Team</span>
           <h2 className="h1 fw-bold">Our Professional Team</h2>
           <p className="text-secondary mx-auto col-lg-8">
             Meet our dedicated professionals who bring expertise and commitment to every project.

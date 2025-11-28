@@ -35,7 +35,7 @@ function Mission() {
       <div className="container" data-reveal>
         <div className="d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between mb-4">
           <div>
-            <span className="section-label text-warning">Purpose</span>
+            <span className="section-label text-warning fs-4 fw-bold">Purpose</span>
             <h2 className="h1 fw-bold">Our mission and vision</h2>
           </div>
           <div className="btn-group" role="group" aria-label="Mission Vision toggle">

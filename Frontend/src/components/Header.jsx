@@ -2,9 +2,9 @@ import heroImg from "../assets/mountain.jpg";
 import logoImage from "../assets/logo.jpeg";
 
 const impactStats = [
-  { label: "Years in Sikkim", value: "14+" },
-  { label: "Public Works Delivered", value: "120" },
-  { label: "Himalayan Specialists", value: "80" },
+  { label: "Years in Sikkim", value: "2+" },
+  { label: "Public Works Delivered", value: "5" },
+  { label: "Himalayan Specialists", value: "5" },
 ];
 
 function Header() {
