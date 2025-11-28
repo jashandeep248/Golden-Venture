@@ -1,7 +1,7 @@
 const services = [
   {
     id: "service-roads",
-    title: "High-Altitude Road Development",
+    title: "High-Altitude Infrastructure Development",
     blurb:
       "Route planning, grade optimisation, and slope stabilisation packages engineered for Himalayan weather extremes.",
     highlights: [

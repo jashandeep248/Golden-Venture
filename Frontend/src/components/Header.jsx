@@ -1,4 +1,4 @@
-import heroImage from "../assets/mountain-road.jpg";
+import heroImg from "../assets/mountain.jpg";
 import logoImage from "../assets/logo.jpeg";
 
 const impactStats = [
@@ -13,7 +13,7 @@ function Header() {
       id="home"
       className="hero-section text-white"
       style={{
-        backgroundImage: `linear-gradient(120deg, rgba(8, 17, 30, 0.85), rgba(9, 41, 63, 0.55)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(120deg, rgba(8, 17, 30, 0.85), rgba(9, 41, 63, 0.55)), url(${heroImg})`,
       }}
     >
       <nav className="navbar navbar-expand-md navbar-dark bg-transparent">
@@ -48,7 +48,10 @@ function Header() {
                 <a className="nav-link" href="#services">Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#leadership">Team</a>
+                <a className="nav-link" href="#leadership">Leadership</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#team">Team</a>
               </li>
               <li className="nav-item">
                 <a className="btn btn-warning text-dark fw-semibold" href="#contact">Talk to us</a>

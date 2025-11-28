@@ -2,7 +2,6 @@ import img  from "../assets/ugenDorjeeBhutia.jpeg";
 import img2 from "../assets/chuki.jpeg";
 import img3 from "../assets/DichenOngmuBhutia.jpeg";
 import img4 from "../assets/Tenzing.jpeg";
-import img5 from "../assets/brahma.jpeg";
 
 const leadership = [
   {
@@ -28,14 +27,7 @@ const leadership = [
     name: "Mr. Tenzin Lepcha",
     role: "Director",
     bio: "Mr. Tenzin Lepcha contributes significantly in field operations and project execution, particularly in challenging terrains, upholding the company's standard for timely and efficient completion.",
-  },
-  {
-    img: img5,
-    name: "Mr. Silbhadra Brahma",
-    role: "CEO",
-    bio: "Worked for construction and erection of two hydel power projects namely Kurhed 4.5 MW and Tulang 3.5 MW SHEP in Chamba Himachal Pradesh. And canal based Small Hydroelectric Power project of 5.0 MW on Madhopur Beas Link canal at Pathankot, Punjab.",
-  },
-
+  }
 ];
 
 function Leadership() {

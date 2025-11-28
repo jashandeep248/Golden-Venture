@@ -4,6 +4,7 @@ import FocusAreas from "./components/FocusAreas";
 import Services from "./components/Services";
 import Mission from "./components/Mission";
 import Leadership from "./components/Leadership";
+import Team from "./components/Team";
 import Strengths from "./components/Strengths";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
@@ -22,6 +23,7 @@ function App() {
         <Services />
         <Mission />
         <Leadership />
+        <Team />
         <Strengths />
         <Projects />
         <Contact />
