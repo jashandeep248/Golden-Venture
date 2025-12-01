@@ -4,7 +4,7 @@
 
 1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
 2. Create free cluster
-3. Get connection string: `mongodb+srv://username:password@cluster.mongodb.net/golden-ventures`
+3. Get connection string: ``
 
 ## Step 2: Deploy Backend on Render
 
@@ -23,7 +23,7 @@
 
 3. **Set Environment Variables:**
    - `NODE_ENV`: production
-   - `PORT`: 10000
+   - `PORT`: 5000
    - `MONGODB_URI`: Your Atlas connection string
    - `SMTP_HOST`: smtp.gmail.com
    - `SMTP_PORT`: 587
@@ -63,6 +63,6 @@ After frontend deploys, update backend `CORS_ORIGIN` with actual frontend URL.
 
 ## URLs
 
-- **Backend:** https://golden-ventures-backend.onrender.com
-- **Frontend:** https://golden-ventures-frontend.onrender.com
+- **Backend:** https://golden-venture-backend.onrender.com
+- **Frontend:** https://golden-venture-frontend.onrender.com
 - **API Health:** https://golden-ventures-backend.onrender.com/api/health
