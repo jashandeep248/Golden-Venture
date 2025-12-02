@@ -33,6 +33,7 @@ app.use(helmet({
 app.use(cors({
   origin: [
     'http://localhost:5173',
+    'http://localhost:3000',
     'https://golden-venture-frontend.onrender.com',
     'https://golden-ventures-frontend.onrender.com'
   ],
@@ -64,9 +65,19 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Handle preflight requests
 app.options('*', (req, res) => {
-  res.header('Access-Control-Allow-Origin', req.headers.origin);
+  const allowedOrigins = [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://golden-venture-frontend.onrender.com',
+    'https://golden-ventures-frontend.onrender.com'
+  ];
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin);
+  }
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
   res.sendStatus(200);
 });
 
