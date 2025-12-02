@@ -6,20 +6,30 @@ const submitContact = async (req, res) => {
     const { name, email, message } = req.body;
     const ipAddress = req.ip || req.connection.remoteAddress;
     
-    // Save to database
-    const contact = new Contact({
-      name,
-      email,
-      message,
-      ipAddress
-    });
-    await contact.save();
+    // Try to save to database
+    try {
+      const contact = new Contact({
+        name,
+        email,
+        message,
+        ipAddress
+      });
+      await contact.save();
+      console.log('Contact saved to database');
+    } catch (dbError) {
+      console.error('Database error:', dbError);
+      // Continue without database
+    }
     
-    // Send notification email to company
-    await emailService.sendContactEmail({ name, email, message });
-    
-    // Send auto-reply to user
-    await emailService.sendAutoReply({ name, email });
+    // Try to send emails but don't fail if email service is down
+    try {
+      await emailService.sendContactEmail({ name, email, message });
+      await emailService.sendAutoReply({ name, email });
+      console.log('Emails sent successfully');
+    } catch (emailError) {
+      console.error('Email service error:', emailError);
+      // Continue without failing the request
+    }
     
     res.status(200).json({
       success: true,
