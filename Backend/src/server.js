@@ -35,7 +35,9 @@ app.use(cors({
     'http://localhost:5173',
     'http://localhost:3000',
     'https://golden-venture-frontend.onrender.com',
-    'https://golden-ventures-frontend.onrender.com'
+    'https://golden-ventures-frontend.onrender.com',
+    'https://goldenventures.co.in',
+    'https://www.goldenventures.co.in'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -69,7 +71,9 @@ app.options('*', (req, res) => {
     'http://localhost:5173',
     'http://localhost:3000',
     'https://golden-venture-frontend.onrender.com',
-    'https://golden-ventures-frontend.onrender.com'
+    'https://golden-ventures-frontend.onrender.com',
+    'https://goldenventures.co.in',
+    'https://www.goldenventures.co.in'
   ];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
