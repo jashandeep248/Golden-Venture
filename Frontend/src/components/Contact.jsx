@@ -67,7 +67,7 @@ function Contact() {
             <ul className="list-unstyled mt-4 d-grid gap-3">
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Phone</span>
-                <span>7063511351, 7602746333</span>
+                <span>9800293888, 9650601156</span>
               </li>
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Email</span>
@@ -75,7 +75,7 @@ function Contact() {
               </li>
               <li className="d-flex gap-3">
                 <span className="badge bg-warning text-dark">Office</span>
-                <span>Himalayan Little Monk Home Stay Building, Sazong, Rumtek, East Sikkim 737135</span>
+                <span>Himalayan Little Monk Home Stay, Sazong, Near IHM, Rumtek, East Sikkim – 737135</span>
               </li>
             </ul>
           </div>

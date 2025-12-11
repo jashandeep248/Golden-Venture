@@ -20,47 +20,44 @@ function Overview() {
               position: "relative",
               zIndex: 1
             }}>
-            <h2 className="h1 fw-bold mb-3">Building a stronger Himalaya</h2>
-            <p className="lead text-secondary mb-4">
-              Golden Venture Private Limited is a dynamic and rapidly growing construction and engineering company headquartered in Rumtek, Sikkim, India.
+            <h2 className="h1 fw-bold mb-4">Building a stronger Himalaya</h2>
+            <p className="lead text-secondary mb-4 lh-base">
+              The Golden Venture Private Limited is a dynamic and rapidly growing construction company based in Rumtek, Sikkim, India. Established in 2011, the company was founded with a clear vision—to contribute meaningfully to the infrastructural development of the Himalayan region through quality, innovation, and sustainable engineering practices.
             </p>
-            <p className="text-secondary mb-3">
-              Driven by a commitment to excellence, innovation, and environmental responsibility, we specialize in terrain-adaptive engineering and complex construction projects in challenging geographies.
+            <p className="text-secondary mb-4 lh-base">
+              Over the years, Golden Venture Pvt. Ltd. has built a strong reputation as a trusted partner in the construction sector, delivering a diverse range of high-quality infrastructure services across Sikkim. From civil engineering works and road construction to structural development and allied infrastructural projects, the company has consistently demonstrated technical expertise, timely execution, and a commitment to excellence.
             </p>
-            <p className="text-secondary mb-3">
-              Our core expertise lies in hydropower civil construction, including intake structures, penstocks, turbine foundations, and powerhouse buildings.
+            <p className="text-secondary mb-4 lh-base">
+              Backed by a highly experienced and dedicated team, the organization combines practical knowledge with modern construction technologies to ensure efficient project delivery even in the challenging terrains of the Himalayas. The team's collective experience strengthens the company's capability to undertake complex projects while maintaining the highest standards of safety, quality, and environmental responsibility.
             </p>
-            <p className="text-secondary">
-              With a growing portfolio of successful projects, we continue to shape resilient infrastructure for the Himalayan region.
+            <p className="text-secondary mb-4 lh-base">
+              At Golden Venture Pvt. Ltd., innovation and sustainability form the core of every project. With an emphasis on enhancing regional connectivity, supporting community development, and building resilient infrastructure, the company continues to play a vital role in shaping a stronger and more connected future for Sikkim.
+            </p>
+            <p className="text-secondary mb-0 lh-base">
+              Driven by integrity, professionalism, and long-term vision, The Golden Venture Private Limited remains committed to contributing to the region’s growth and emerging as a leading name in infrastructure development across the Himalayan belt. 
             </p>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="row g-3">
-              <div className="col-6">
-                <div className="mini-feature card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <span className="badge bg-warning text-dark mb-2">Core Services</span>
-                    <p className="fw-semibold mb-0">Hydropower & civil construction with specialized engineering.</p>
-                  </div>
+            <div className="d-flex flex-column gap-4">
+              <div className="mini-feature card border-0 shadow-sm">
+                <div className="card-body">
+                  <span className="badge bg-warning text-dark mb-2">Core Services</span>
+                  <p className="fw-semibold mb-0">Hydropower & civil construction with specialized engineering.</p>
                 </div>
               </div>
-              <div className="col-6">
-                <div className="mini-feature card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <span className="badge bg-warning text-dark mb-2">Specialised</span>
-                    <p className="fw-semibold mb-0">Terrain-adaptive solutions for challenging geographies.</p>
-                  </div>
+              <div className="mini-feature card border-0 shadow-sm">
+                <div className="card-body">
+                  <span className="badge bg-warning text-dark mb-2">Specialised</span>
+                  <p className="fw-semibold mb-0">Terrain-adaptive solutions for challenging geographies.</p>
                 </div>
               </div>
-              <div className="col-12">
-                <div className="mini-feature card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <span className="badge bg-warning text-dark mb-2">Promise</span>
-                    <p className="fw-semibold mb-0">
-                      End-to-end delivery: planning, execution, and lasting maintenance support.
-                    </p>
-                  </div>
+              <div className="mini-feature card border-0 shadow-sm">
+                <div className="card-body">
+                  <span className="badge bg-warning text-dark mb-2">Promise</span>
+                  <p className="fw-semibold mb-0">
+                    End-to-end delivery: planning, execution, and lasting maintenance support.
+                  </p>
                 </div>
               </div>
             </div>
