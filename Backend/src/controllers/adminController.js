@@ -1,32 +1,22 @@
+const Admin = require('../models/Admin');
 const Contact = require('../models/Contact');
 
-const submitContact = async (req, res) => {
+const login = async (req, res) => {
   try {
-    const { name, email, phone, message } = req.body;
-    const ipAddress = req.ip || req.connection.remoteAddress;
+    const { email, password } = req.body;
     
-    const contact = new Contact({
-      name,
-      email,
-      phone,
-      message,
-      ipAddress
-    });
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email and password required' });
+    }
     
-    await contact.save();
-    console.log('Contact saved to database');
+    const admin = await Admin.findOne({ email });
+    if (!admin || !(await admin.comparePassword(password))) {
+      return res.status(401).json({ error: 'Invalid credentials' });
+    }
     
-    res.status(200).json({
-      success: true,
-      message: 'Thank you! Your message has been received.'
-    });
-    
+    res.json({ success: true, message: 'Login successful' });
   } catch (error) {
-    console.error('Contact form error:', error);
-    res.status(500).json({
-      success: false,
-      error: 'Failed to save message. Please try again.'
-    });
+    res.status(500).json({ error: 'Login failed' });
   }
 };
 
@@ -52,7 +42,7 @@ const updateContactStatus = async (req, res) => {
 };
 
 module.exports = {
-  submitContact,
+  login,
   getContacts,
   updateContactStatus
 };

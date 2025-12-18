@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const compression = require('compression');
-const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
 const connectDB = require('./config/database');
 const contactRoutes = require('./routes/contact');
+const adminRoutes = require('./routes/admin');
 const { errorHandler } = require('./middleware/errorHandler');
 
 // Connect to MongoDB
@@ -46,24 +46,9 @@ app.use(cors({
 
 app.use(compression());
 
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-  message: 'Too many requests from this IP, please try again later.'
-});
-app.use(limiter);
-
-// Contact form rate limiting (stricter)
-const contactLimiter = rateLimit({
-  windowMs: 60 * 60 * 1000, // 1 hour
-  max: 5, // limit each IP to 5 contact form submissions per hour
-  message: 'Too many contact form submissions, please try again later.'
-});
-
 // Body parsing middleware
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+app.use(express.json({ limit: '1mb' }));
+app.use(express.urlencoded({ extended: true, limit: '1mb' }));
 
 // Handle preflight requests
 app.options('*', (req, res) => {
@@ -86,7 +71,8 @@ app.options('*', (req, res) => {
 });
 
 // Routes
-app.use('/api/contact', contactLimiter, contactRoutes);
+app.use('/api/contact', contactRoutes);
+app.use('/api/admin', adminRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {

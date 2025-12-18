@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Overview from "./components/Overview";
 import FocusAreas from "./components/FocusAreas";
@@ -9,10 +10,16 @@ import Strengths from "./components/Strengths";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Admin from "./components/Admin";
 import useScrollReveal from "./hooks/useScrollReveal";
 
 function App() {
   useScrollReveal();
+  const [showAdmin, setShowAdmin] = useState(window.location.pathname === '/admin');
+
+  if (showAdmin) {
+    return <Admin />;
+  }
 
   return (
     <div className="app-shell bg-light text-body">

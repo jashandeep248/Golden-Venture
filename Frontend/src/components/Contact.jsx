@@ -2,7 +2,7 @@ import { useState } from "react";
 import bridgeImage from "../assets/cable-bridge.jpg";
 
 function Contact() {
-  const [contactData, setContactData] = useState({ name: "", email: "", message: "" });
+  const [contactData, setContactData] = useState({ name: "", email: "", phone: "", message: "" });
   const [formStatus, setFormStatus] = useState({ submitted: false, error: "" });
 
   const handleInputChange = (event) => {
@@ -16,11 +16,12 @@ function Contact() {
     const trimmed = {
       name: contactData.name.trim(),
       email: contactData.email.trim(),
+      phone: contactData.phone.trim(),
       message: contactData.message.trim(),
     };
 
-    if (!trimmed.name || !trimmed.email.includes("@") || trimmed.message.length < 10) {
-      setFormStatus({ submitted: false, error: "Please share your name, a valid email, and a short project brief." });
+    if (!trimmed.name || !trimmed.email.includes("@") || !trimmed.phone || !trimmed.message) {
+      setFormStatus({ submitted: false, error: "Please share your name, valid email, phone number, and project brief." });
       return;
     }
 
@@ -38,7 +39,7 @@ function Contact() {
 
       if (response.ok) {
         setFormStatus({ submitted: true, error: "" });
-        setContactData({ name: "", email: "", message: "" });
+        setContactData({ name: "", email: "", phone: "", message: "" });
       } else {
         setFormStatus({ submitted: false, error: result.error || "Failed to send message. Please try again." });
       }
@@ -110,6 +111,21 @@ function Contact() {
                       className="form-control"
                       placeholder="name@organisation.com"
                       value={contactData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="contact-phone" className="form-label fw-semibold">
+                      Phone number
+                    </label>
+                    <input
+                      id="contact-phone"
+                      name="phone"
+                      type="tel"
+                      className="form-control"
+                      placeholder="Enter your phone number"
+                      value={contactData.phone}
                       onChange={handleInputChange}
                       required
                     />

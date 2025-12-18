@@ -4,8 +4,7 @@ const contactSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    trim: true,
-    maxlength: 100
+    trim: true
   },
   email: {
     type: String,
@@ -13,11 +12,15 @@ const contactSchema = new mongoose.Schema({
     trim: true,
     lowercase: true
   },
+  phone: {
+    type: String,
+    required: true,
+    trim: true
+  },
   message: {
     type: String,
     required: true,
-    trim: true,
-    maxlength: 1000
+    trim: true
   },
   status: {
     type: String,
