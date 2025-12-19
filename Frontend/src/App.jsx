@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Overview from "./components/Overview";
 import FocusAreas from "./components/FocusAreas";
@@ -15,9 +15,18 @@ import useScrollReveal from "./hooks/useScrollReveal";
 
 function App() {
   useScrollReveal();
-  const [showAdmin, setShowAdmin] = useState(window.location.pathname === '/admin');
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
-  if (showAdmin) {
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  if (currentPath === '/admin') {
     return <Admin />;
   }
 

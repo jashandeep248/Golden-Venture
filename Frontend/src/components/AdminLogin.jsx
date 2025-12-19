@@ -17,6 +17,8 @@ function AdminLogin({ onLogin }) {
       });
 
       if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('adminToken', data.token);
         onLogin();
       } else {
         setError('Invalid credentials');

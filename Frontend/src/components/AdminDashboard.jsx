@@ -11,8 +11,13 @@ function AdminDashboard({ onLogout }) {
 
   const fetchContacts = async () => {
     try {
+      const token = localStorage.getItem('adminToken');
       const apiUrl = import.meta.env.VITE_API_URL || 'https://golden-venture-backend.onrender.com/api';
-      const response = await fetch(`${apiUrl}/admin/contacts`);
+      const response = await fetch(`${apiUrl}/admin/contacts`, {
+        headers: {
+          'Authorization': `Bearer ${token}`
+        }
+      });
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -24,10 +29,14 @@ function AdminDashboard({ onLogout }) {
 
   const updateStatus = async (id, status) => {
     try {
+      const token = localStorage.getItem('adminToken');
       const apiUrl = import.meta.env.VITE_API_URL || 'https://golden-venture-backend.onrender.com/api';
       await fetch(`${apiUrl}/admin/contacts/${id}`, {
         method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+        },
         body: JSON.stringify({ status })
       });
       fetchContacts();
