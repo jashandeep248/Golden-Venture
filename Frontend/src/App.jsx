@@ -15,15 +15,26 @@ import useScrollReveal from "./hooks/useScrollReveal";
 
 function App() {
   useScrollReveal();
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [currentPath, setCurrentPath] = useState(() => {
+    const path = window.location.pathname;
+    const hash = window.location.hash;
+    return path === '/admin' || hash === '#/admin' || path.includes('/admin') ? '/admin' : '/';
+  });
 
   useEffect(() => {
-    const handlePopState = () => {
-      setCurrentPath(window.location.pathname);
+    const handleRouteChange = () => {
+      const path = window.location.pathname;
+      const hash = window.location.hash;
+      setCurrentPath(path === '/admin' || hash === '#/admin' || path.includes('/admin') ? '/admin' : '/');
     };
     
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', handleRouteChange);
+    window.addEventListener('hashchange', handleRouteChange);
+    
+    return () => {
+      window.removeEventListener('popstate', handleRouteChange);
+      window.removeEventListener('hashchange', handleRouteChange);
+    };
   }, []);
 
   if (currentPath === '/admin') {

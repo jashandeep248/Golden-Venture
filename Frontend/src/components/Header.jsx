@@ -56,6 +56,15 @@ function Header() {
               <li className="nav-item">
                 <a className="btn btn-warning text-dark fw-semibold" href="#contact">Talk to us</a>
               </li>
+              <li className="nav-item d-none">
+                <button 
+                  className="btn btn-link text-white-50 p-0" 
+                  onClick={() => window.location.pathname = '/admin'}
+                  style={{ fontSize: '12px' }}
+                >
+                  Admin
+                </button>
+              </li>
             </ul>
           </div>
         </div>
