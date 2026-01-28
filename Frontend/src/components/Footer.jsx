@@ -4,6 +4,7 @@ function Footer() {
       <div className="container d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-4">
         <div className="flex-grow-1">
           <strong className="text-white d-block mb-2">The Golden Venture Private Limited</strong>
+          <p className="mb-1 small">GSTN: 11AAECG5866H1ZN</p>
           <p className="mb-1 small">CIN: U51909GJ1995PTC025525 · Incorporation Year: 2011</p>
           <p className="mb-0 small">Registered Office: Himalayan Little Monk Home Stay, Sazong, Near IHM, Rumtek, East Sikkim – 737135</p>
         </div>
