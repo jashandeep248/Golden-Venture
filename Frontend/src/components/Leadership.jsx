@@ -1,7 +1,7 @@
 import img  from "../assets/ugenDorjeeBhutia.jpeg";
 import img2 from "../assets/chuki.jpg";
 import img3 from "../assets/DichenOngmuBhutia.jpeg";
-import img4 from "../assets/Tenzing.jpeg";
+import img4 from "../assets/Chimila Bhutia.jpeg";
 
 const leadership = [
   {
@@ -24,9 +24,9 @@ const leadership = [
   },
   {
     img: img4,
-    name: "Mr. Tenzing Lepcha",
+    name: "Ms. Chimila Bhutia",
     role: "Director",
-    bio: "Mr. Tenzing Lepcha contributes significantly in field operations and project execution, particularly in challenging terrains, upholding the company's standard for timely and efficient completion.",
+    bio: "Ms. Chimila Bhutia is a prominent young entrepreneur, youth influencer, and content creator from Sikkim. She has gained widespread recognition for breaking gender stereotypes, championing youth skill development, and advancing public awareness campaigns across the state.",
   }
 ];
 
